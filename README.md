@@ -1,2 +1,2 @@
-# Encoded
-Encoded is a web application built with HTML, CSS and Python's flask module. It is a password manager that stores all the data of the users in an encrypted way. It also has additional features such a random password generator and a password strength checker.
+# Flux
+A Website which aims to address social issues, causes and movements and keep people informed.
