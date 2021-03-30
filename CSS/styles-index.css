@@ -290,6 +290,27 @@ h3 {
     margin-top: 50px !important;
 }
 
+.view-more-link {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.view-more-link img {
+    margin-left: 2px;
+}
+
+.view-more-link:hover .Arrow {
+    display: none;
+}
+
+.view-more-link:hover .Arrow-Hover {
+    display: inline;
+}
+
+
 @media (max-width: 991px) {
 
     .Arrow-Hover {
@@ -315,6 +336,6 @@ h3 {
     }
 
     .third-part-content-box {
-        margin-left: 25% !important;
+        margin-left: 100px !important;
     }
 }
