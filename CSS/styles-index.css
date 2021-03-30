@@ -60,7 +60,7 @@ h3 {
 
 .introductory-btn {
     padding: 1em 2em !important;
-    font-size: 15px !important; 
+    font-size: 15px !important;
     text-transform: uppercase;
     color: black;
     display: block;
@@ -164,7 +164,7 @@ h3 {
     background: linear-gradient(#5B86E5, #36D1DC);
 }
 
-.purple  {
+.purple {
     background: linear-gradient(#4A00E0, #8E2DE2);
 }
 
@@ -192,6 +192,12 @@ h3 {
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+.content-container-5,
+.content-container-6 {
+    margin-bottom: 0 !important;
 }
 
 .content-text-header {
@@ -250,7 +256,7 @@ h3 {
 .third-part-content-box:hover {
     transform: translateY(-10px) rotate(3deg);
 }
-    
+
 .third-part-img {
     display: block;
     max-height: 80px;
@@ -303,6 +309,10 @@ h3 {
     cursor: pointer;
 }
 
+.view-more-link:hover {
+    color: #323;
+}
+
 .view-more-link img {
     margin-left: 2px;
 }
@@ -339,4 +349,9 @@ h3 {
     .introductory-text-header {
         font-size: 60px;
     }
+
+    .bottom-triangle-grey {
+        margin-top: -25% !important;
+    }
+
 }
