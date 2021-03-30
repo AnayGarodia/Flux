@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const circles = document.querySelectorAll(".circle-container");
     circleAppear(circles[0]);
     boxAppear(boxes[0])
-    document.addEventListener("scroll", () => {
+    window.addEventListener("scroll", () => {
         circleAppear(circles[0]);
         boxAppear(boxes[0])
     });
