@@ -123,6 +123,7 @@ h3 {
     border-top: 10em solid #0a2540;
     border-right: 100em solid #fff;
     margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 .second-part {
@@ -214,6 +215,7 @@ h3 {
     border-top: 10em solid #fff;
     border-right: 100em solid #e2e2e2;
     margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 .third-part {
@@ -232,7 +234,7 @@ h3 {
 }
 
 .third-part-content-box {
-    display: inline-block;
+    display: block;
     padding: 10px 20px !important;
     border-radius: 0.5em;
     margin: 0 auto !important;
@@ -241,6 +243,8 @@ h3 {
     width: 250px;
     margin-top: 50px !important;
     transition: 0.5s;
+    margin-left: auto !important;
+    margin-right: auto;
 }
 
 .third-part-content-box:hover {
@@ -288,6 +292,7 @@ h3 {
     border-top: 10em solid #e2e2e2;
     border-right: 100em solid #0a2540;
     margin-top: 50px !important;
+    overflow-x: hidden;
 }
 
 .view-more-link {
@@ -333,9 +338,5 @@ h3 {
 @media (max-width: 575px) {
     .introductory-text-header {
         font-size: 60px;
-    }
-
-    .third-part-content-box {
-        margin-left: 100px !important;
     }
 }
