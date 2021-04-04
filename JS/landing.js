@@ -1,4 +1,4 @@
-function showContent() {
+async function showContent() {
     const invisibleContentBox = document.querySelectorAll(".third-part-content-box-container")
     const showMoreLink = document.querySelector(".show-more-link-text");
 
@@ -18,39 +18,6 @@ function showContent() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const boxes = document.querySelectorAll(".third-part-content-box-container");
-    const circles = document.querySelectorAll(".circle-container");
-    circleAppear(circles[0]);
-    boxAppear(boxes[0])
-    window.addEventListener("scroll", () => {
-        circleAppear(circles[0]);
-        boxAppear(boxes[0])
-    });
-})
-
-function circleAppear(n) {
-    const circles = document.querySelectorAll(".circle-container");
-    if (window.pageYOffset > distanceFromTop(n) / 2) {
-        for (let i = 0; i < circles.length; i++) {
-            circles[i].style.animation = '1s appear'
-            circles[i].style.opacity = '1'
-        }
-    }
-}
-
-function boxAppear(n) {
-    const boxes = document.querySelectorAll(".third-part-content-box-container");
-    console.log(window.pageYOffset > distanceFromTop(n) / 1.25)
-    if (window.pageYOffset > distanceFromTop(n) / 1.25) {
-        for (let j = 0; j < boxes.length; j++) {
-            console.log('done')
-            boxes[j].style.animation = '1s appear'
-            boxes[j].style.opacity = '1'
-        }
-    }
-}
-
 function distanceFromTop(elem) {
     var location = 0;
     if (elem.offsetParent) {
@@ -61,3 +28,38 @@ function distanceFromTop(elem) {
     }
     return location >= 0 ? location : 0;
 };
+
+async function changeText() {
+    const changingText = document.getElementById('bottom-span');
+    const textArr = ["Help", "Innovate", "Challenge Conventions", "Break Barriers", "Donate", "Fight Evils", "Protect Rights", "Preserve Nature"];
+    var text;
+    do {
+        text = textArr[Math.floor(Math.random() * textArr.length)];
+    } while (text == changingText.innerHTML)
+    changingText.style.animation = "2s appear";
+    await sleep(100);
+    changingText.innerHTML = text;
+    await sleep(1000)
+    changingText.style.animation = "none";
+
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+setInterval(changeText, 2500);
+
+async function appear() {
+    var content = document.querySelectorAll(".content-part");
+
+    for (let i = 0; i < content.length; i++) {
+        if (window.pageYOffset > distanceFromTop(content[i]) - 500 && content[i].style.opacity != '1') {
+            content[i].style.animation = '1s fadeIn';
+            await sleep(1000);
+            content[i].style.opacity = '1';
+            content[i].style.animation = 'none';
+        }
+    }
+}
