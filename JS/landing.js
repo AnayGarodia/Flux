@@ -31,23 +31,30 @@ function distanceFromTop(elem) {
 
 async function changeText() {
     const changingText = document.getElementById('bottom-span');
-    const textArr = ["Help", "Innovate", "Challenge Conventions", "Break Barriers", "Donate", "Fight Evils", "Protect Rights", "Preserve Nature"];
-    var text;
-    do {
-        text = textArr[Math.floor(Math.random() * textArr.length)];
-    } while (text == changingText.innerHTML)
-    changingText.style.animation = "2s appear";
+    
+    const textArr = ["Help", "Innovate", "Challenge Conventions", 
+    "Break Barriers", "Donate", "Fight Evils", "Protect Rights", 
+    "Preserve Nature", "Champion Causes"];
+
+    text = textArr[i];
+    i++;
+
+    if (i == textArr.length) {
+        i = 0;
+    }
+    changingText.style.animation = "1.5s appear";
     await sleep(100);
     changingText.innerHTML = text;
     await sleep(1000)
     changingText.style.animation = "none";
-
 }
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+var text, i;
+i = 0;
 
 setInterval(changeText, 2500);
 

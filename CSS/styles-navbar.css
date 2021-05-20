@@ -1,0 +1,117 @@
+nav main {
+    z-index: 200;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: #00d4ff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #07a;
+}
+
+.nav-link {
+    font-size: 15px;
+    color: white !important;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #BBB !important;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 3px solid #00d4ff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.menu-btn-burger {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2.5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2.5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-8px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(8px);
+}
+
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-25px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(17.5px, -17.5px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(17.5px, 17.5px);
+}
+
+.nav-collapse-content {
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    top: 0;
+    background: linear-gradient(to bottom, #226, #0a2540);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-collapse-content a.nav-link {
+    font-size: 15px;
+    color: white !important;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-collapse-content a.nav-link:hover {
+    color: #BBB !important;
+}
+
+.content {
+    height: 40%;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex {
+    z-index: 100;
+    opacity: 1;
+}
