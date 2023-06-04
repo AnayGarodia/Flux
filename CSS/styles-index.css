@@ -41,12 +41,15 @@
     }
 }
 
+.no-overflow {
+    overflow-x:hidden !important;
+}
+
 body {
     font-family: 'Montserrat';
     overflow-x: hidden;
     background: #fff;
     background: #fff;
-    overflow-x:hidden !important;
 }
 
 *::selection {
