@@ -239,7 +239,7 @@ h3 {
 
 .third-part-content {
     animation-fill-mode: forwards;
-    opacity: 0;
+    opacity: 1;
     padding-bottom: 50px;
 }
 
@@ -346,7 +346,7 @@ h3 {
 }
 
 .fourth-part-content {
-    opacity: 0;
+    opacity: 1;
     animation-fill-mode: forwards;
 }
 
