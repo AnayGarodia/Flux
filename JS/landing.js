@@ -70,5 +70,10 @@ async function appear() {
             content[i].style.animation = 'none';
         }
     }
+}else{
+      var content = document.querySelectorAll(".content-part");
+    for (let i = 0; i < content.length; i++) {
+            content[i].style.opacity = '1';
+            content[i].style.animation = 'none';
 }
 }
