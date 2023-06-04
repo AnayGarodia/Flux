@@ -1,6 +1,6 @@
 @keyframes appear {
     0% {
-        opacity: 0;
+        opacity: 1;
         
     }
 
@@ -162,7 +162,7 @@ h3 {
 .content-container {
     margin: 5%;
     animation-fill-mode: forwards;
-    opacity: 0;
+    opacity: 1;
 }
 
 .content-circle {
