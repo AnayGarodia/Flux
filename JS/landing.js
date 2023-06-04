@@ -59,6 +59,7 @@ i = 0;
 setInterval(changeText, 2500);
 
 async function appear() {
+   if (!navigator.userAgent.match(/Android/i){
     var content = document.querySelectorAll(".content-part");
 
     for (let i = 0; i < content.length; i++) {
@@ -69,4 +70,5 @@ async function appear() {
             content[i].style.animation = 'none';
         }
     }
+}
 }
