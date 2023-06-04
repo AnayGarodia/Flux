@@ -32,9 +32,9 @@ function distanceFromTop(elem) {
 async function changeText() {
     const changingText = document.getElementById('bottom-span');
     
-    const textArr = ["Help", "Innovate", "Challenge Conventions", 
-    "Break Barriers", "Donate", "Fight Evils", "Protect Rights", 
-    "Preserve Nature", "Champion Causes"];
+    const textArr = ["Help", "Innovate", "Educate", 
+    "Break Barriers", "Donate", "Inspire", "Empower", 
+    "Support", "Champion Causes"];
 
     text = textArr[i];
     i++;

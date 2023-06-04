@@ -3,8 +3,8 @@ nav main {
 }
 
 .navbar-brand {
-    font-size: 30px;
-    color: #00d4ff !important;
+    font-size: 20px;
+    color: #FF4500 !important;
     font-weight: bold;
 }
 
@@ -13,7 +13,7 @@ nav main {
 }
 
 .nav-link {
-    font-size: 15px;
+    font-size: 18px;
     color: white !important;
     position: relative;
     display: inline-block;
@@ -31,7 +31,7 @@ nav main {
     height: 40px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    border: 3px solid #00d4ff;
+    border: 3px solid #FF4500;
     border-radius: 4px;
     padding: 5px;
 }
@@ -87,7 +87,7 @@ nav main {
     height: 100vh;
     z-index: -10;
     top: 0;
-    background: linear-gradient(to bottom, #226, #0a2540);
+    background: linear-gradient(to bottom, #222222, #333333);
     transition: all 0.5s ease-in-out;
 }
 

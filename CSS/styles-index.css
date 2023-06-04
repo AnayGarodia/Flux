@@ -46,21 +46,22 @@ body {
     overflow-x: hidden;
     background: #fff;
     background: #fff;
+    overflow-x:hidden !important;
 }
 
 *::selection {
     background: #000;
-    color: #00d4ff;
+    color: #FF4500;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Open Sans';
+    font-family: 'Geologica';
 }
 
 .introductory {
-    background: linear-gradient(to bottom, #226, #0a2540);
+    background: linear-gradient(to bottom, #222222, #333333);
     width: 100%;
     padding-bottom: -0%;
 }
@@ -72,14 +73,19 @@ h3 {
 
 .introductory-text-header {
     font-size: 90px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     font-family: 'Roboto';
     color: white;
 }
 
+.introductory-image {
+    height: 170px;
+    width: 150px;
+}
+
 .introductory-text-paragraph {
     font-size: 24px;
-    font-family: Lato;
+    font-family: Geologica;
 }
 
 .introductory-btn {
@@ -93,7 +99,7 @@ h3 {
     border: none;
     outline: none;
     transition: 0.4s;
-    background: #00d4ff;
+    background: #FF4500;
     margin-top: 30px;
 }
 
@@ -126,7 +132,7 @@ h3 {
 .bottom-triangle {
     width: 0;
     height: 0;
-    border-top: 10em solid #0a2540;
+    border-top: 10em solid #333333;
     border-right: 100em solid #fff;
     margin-bottom: 0;
     overflow-x: hidden;
@@ -147,7 +153,7 @@ h3 {
     height: 3px;
     width: 50px;
     margin: 0 auto;
-    background-color: #00d4ff;
+    background-color: #FF4500;
 }
 
 .content-container {
@@ -217,7 +223,7 @@ h3 {
     width: 0;
     height: 0;
     border-top: 10em solid #fff;
-    border-right: 100em solid #e2e2e2;
+    border-right: 100em solid #333333;
     margin-bottom: 0;
     overflow-x: hidden;
 }
@@ -277,7 +283,7 @@ h3 {
     text-align: center;
     font-weight: bold;
     font-size: 16px;
-    color: #0a2540;
+    color: #333333;
     cursor: pointer;
 }
 
@@ -301,7 +307,7 @@ h3 {
     width: 0;
     height: 0;
     border-top: 10em solid #e2e2e2;
-    border-right: 100em solid #0a2540;
+    border-right: 100em solid #333333;
     overflow-x: hidden;
 }
 
@@ -330,7 +336,7 @@ h3 {
 }
 
 .fourth-part {
-    background: linear-gradient(to top, #226, #0a2540);
+    background: linear-gradient(to top, #222222, #333333);
     color: white;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -352,7 +358,7 @@ h3 {
     border: none;
     outline: none;
     transition: 0.4s;
-    background: #00d4ff;
+    background: #FF4500;
     margin-top: 20px;
     padding: 1em 2em;
     font-size: 15px;
