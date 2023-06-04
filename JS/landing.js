@@ -1,3 +1,4 @@
+// 
 async function showContent() {
     const invisibleContentBox = document.querySelectorAll(".third-part-content-box-container")
     const showMoreLink = document.querySelector(".show-more-link-text");
